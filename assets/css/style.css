@@ -524,12 +524,12 @@ p {
   color: white;
 }
 
-#projects .project-info h3 {
+#projects .project-info h4 {
   font-size: 4rem;
   font-weight: 500;
 }
 
-#projects .project-info h4 {
+#projects .project-info h5 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 10px;
