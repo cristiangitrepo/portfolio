@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --main-color: #0981c2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,14 +60,14 @@ p {
 }
 
 .section-title span {
-  color: crimson;
+  color: var(--main-color);
 }
 
 .cta {
   display: inline-block;
   padding: 10px 30px;
   background-color: transparent;
-  border: 2px solid crimson;
+  border: 2px solid var(--main-color);
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -75,7 +79,7 @@ p {
 
 .cta:hover {
   color: white;
-  background-color: crimson;
+  background-color: var(--main-color);
 }
 
 .brand p {
@@ -86,7 +90,7 @@ p {
 }
 
 .brand p span {
-  color: crimson;
+  color: var(--main-color);
   font-size: 35px;
   font-family: serif;
 }
@@ -106,7 +110,7 @@ p {
   min-height: 8vh;
   transition: 0.3s ease background-color;
   background: rgba(255, 255, 255, 0.036);
-  box-shadow: 0 8px 32px 0 rgba(78, 8, 8, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -252,7 +256,7 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-  color: crimson;
+  color: var(--main-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -341,13 +345,13 @@ p {
 
 @keyframes text-reveal-name {
   100% {
-    color: crimson;
+    color: var(--main-color);
     font-weight: 500;
   }
 }
 
 #hero h2 span {
-  background-color: crimson;
+  background-color: var(--main-color);
   height: 100%;
   width: 0;
   position: absolute;
@@ -641,7 +645,7 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
-  border: 7px solid crimson;
+  border: 7px solidvar(--main-color);
   z-index: -1;
 }
 
@@ -661,7 +665,7 @@ p {
     top: 34px;
     height: 98%;
     width: 98%;
-    border: 10px solid crimson;
+    border: 10px solidvar(--main-color);
   }
 
   #about .col-right {
