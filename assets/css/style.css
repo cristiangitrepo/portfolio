@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   min-height: 100vh;
   width: 100%;
@@ -72,14 +78,14 @@ p {
   background-color: crimson;
 }
 
-.brand h1 {
+.brand p {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: white;
   margin-left: 20px;
 }
 
-.brand h1 span {
+.brand p span {
   color: crimson;
   font-size: 35px;
   font-family: serif;
@@ -101,8 +107,8 @@ p {
   transition: 0.3s ease background-color;
   background: rgba(255, 255, 255, 0.036);
   box-shadow: 0 8px 32px 0 rgba(78, 8, 8, 0.37);
-  backdrop-filter: blur( 5px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #header .nav-bar {
@@ -146,6 +152,7 @@ p {
     opacity: 1;
     transform: scale(1);
   }
+
   100% {
     opacity: 0;
     transform: scale(1.4);
@@ -203,7 +210,7 @@ p {
   overflow-x: hidden;
   padding-right: 10px;
   transition: 0.3s ease left;
-  
+
 }
 
 #header .nav-list ul.active {
@@ -239,9 +246,11 @@ p {
   transform: translate(-50%, -50%) scale(1);
   letter-spacing: initial;
 }
-#header .nav-list ul li a{
+
+#header .nav-list ul li a {
   transition: color .3s ease;
 }
+
 #header .nav-list ul li:hover a {
   color: crimson;
 }
@@ -301,7 +310,7 @@ p {
   padding: 0 50px;
 }
 
-#hero h1 {
+#hero h2 {
   display: block;
   width: fit-content;
   font-size: 4rem;
@@ -317,15 +326,15 @@ p {
   }
 }
 
-#hero h1:nth-child(1) {
+#hero h2:nth-child(1) {
   animation-delay: 1s;
 }
 
-#hero h1:nth-child(2) {
+#hero h2:nth-child(2) {
   animation-delay: 2s;
 }
 
-#hero h1:nth-child(3) {
+#hero h2:nth-child(3) {
   animation: text-reveal-name 0.5s ease 1.5s forwards;
   animation-delay: 3s;
 }
@@ -337,7 +346,7 @@ p {
   }
 }
 
-#hero h1 span {
+#hero h2 span {
   background-color: crimson;
   height: 100%;
   width: 0;
@@ -353,21 +362,22 @@ p {
     width: 100%;
     left: 0;
   }
+
   100% {
     width: 0;
     left: 100%;
   }
 }
 
-#hero h1:nth-child(1) span {
+#hero h2:nth-child(1) span {
   animation-delay: 0.5s;
 }
 
-#hero h1:nth-child(2) span {
+#hero h2:nth-child(2) span {
   animation-delay: 1.5s;
 }
 
-#hero h1:nth-child(3) span {
+#hero h2:nth-child(3) span {
   animation-delay: 2.5s;
 }
 
@@ -377,12 +387,12 @@ p {
     padding: 20px 60px;
   }
 
-  h1.section-title {
+  h2.section-title {
     font-size: 6rem;
     font-weight: 270;
   }
 
-  #hero h1 {
+  #hero h2 {
     font-size: 7rem;
     font-weight: 400;
   }
@@ -394,7 +404,8 @@ p {
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
-  margin: 0 auto; /* Center the element horizontally */
+  margin: 0 auto;
+  /* Center the element horizontally */
   padding: 100px 0;
 }
 
@@ -404,7 +415,7 @@ p {
   margin-bottom: 20px;
 }
 
-#services .service-item h2 {
+#services .service-item h4 {
   font-size: 2rem;
   color: white;
   margin-bottom: 10px;
@@ -430,7 +441,8 @@ p {
 }
 
 #services .service-item {
-  flex-basis: 80%; /*flex-basis defines the initial size of a flex item */
+  flex-basis: 80%;
+  /*flex-basis defines the initial size of a flex item */
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -512,12 +524,12 @@ p {
   color: white;
 }
 
-#projects .project-info h1 {
+#projects .project-info h3 {
   font-size: 4rem;
   font-weight: 500;
 }
 
-#projects .project-info h2 {
+#projects .project-info h4 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 10px;
@@ -557,9 +569,11 @@ p {
   #projects .project-item {
     flex-direction: row;
   }
+
   #projects .project-item:nth-child(even) {
     flex-direction: row-reverse;
   }
+
   #projects .project-item {
     height: 400px;
     margin: 0;
@@ -667,9 +681,11 @@ p {
   margin: 0 auto;
   width: 90%;
 }
+
 #contact .contact-items {
   width: 100%;
 }
+
 #contact .contact-item {
   width: 80%;
   padding: 20px;
@@ -685,20 +701,24 @@ p {
   transition: 0.3s ease box-shadow;
   cursor: pointer;
 }
+
 #contact .contact-item:hover {
   box-shadow: 0px 0px 5px 0 #0000002c;
 }
+
 #contact .icon {
   width: 70px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
-#contact .contact-info h1 {
+
+#contact .contact-info h4 {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 5px;
 }
-#contact .contact-info h2 {
+
+#contact .contact-info h5 {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 500;
@@ -712,6 +732,7 @@ p {
     justify-content: center;
     min-width: 20vh;
   }
+
   #contact .contact-items {
     width: 100%;
     display: flex;
@@ -719,18 +740,22 @@ p {
     justify-content: space-evenly;
     margin: 0;
   }
+
   #contact .contact-item {
     width: 30%;
     margin: 0;
     flex-direction: row;
   }
+
   #contact .contact-item .icon {
     height: 100px;
-    width: 100px;
+    /* width: 200; */
   }
+
   #contact .contact-item .icon img {
     object-fit: contain;
   }
+
   #contact .contact-item .contact-info {
     width: 100%;
     text-align: left;
@@ -742,12 +767,14 @@ p {
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
+
 #footer .footer {
   min-height: 200px;
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 10px;
 }
+
 #footer h2 {
   color: white;
   font-weight: 500;
@@ -756,22 +783,27 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 #footer .social-icon {
   display: flex;
   margin-bottom: 30px;
 }
+
 #footer .social-item {
   height: 50px;
   width: 50px;
   margin: 0 5px;
 }
+
 #footer .social-item img {
   filter: grayscale(1);
   transition: 0.3s ease filter;
 }
+
 #footer .social-item:hover img {
   filter: grayscale(0);
 }
+
 #footer p {
   color: white;
   font-size: 1.3rem;
@@ -823,16 +855,3 @@ p {
 .service-item:hover .icon img {
   transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
