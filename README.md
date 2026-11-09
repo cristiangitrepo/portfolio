@@ -4,4 +4,4 @@ Este proyecto muestra mis habilidades en desarrollo web front-end, con un diseñ
 
 Primersos pasos con Git y VS Code
 
-https://webusable.github.io/portfolio/
+https://cristiangitrepo.github.io/portfolio/
