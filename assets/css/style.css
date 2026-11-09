@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --main-color: #0981c2;
+  --main-color: #0962c2;
 }
 
 * {
@@ -844,7 +844,7 @@ p {
   left: -100%;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg, #ff5733, #ffcc33);
+  background: linear-gradient(90deg, var(--main-color), color-mix(in srgb, var(--main-color), yellow 30%));
   transition: left 0.3s ease;
 }
 
