@@ -12,10 +12,14 @@
     <script>
         const requestURL = './assets/data/data.json';
         const request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = processData;
+
+        addEventListener("load", (event) => {
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = processData;
+        });
+
 
         function processData() {
             const data = request.response;
