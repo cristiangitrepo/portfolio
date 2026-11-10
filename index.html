@@ -50,17 +50,13 @@
                 projects.forEach(project => {
                     const projectDiv = createElement('div', projectCardGrid);
 
-                    const titleH1 = createElement('h1', projectDiv);
+                    const titleH1 = createElement('h2', projectDiv);
                     titleH1.textContent = project.name;
 
-                    const clientH2 = createElement('h2', projectDiv);
+                    const clientH2 = createElement('h3', projectDiv);
                     clientH2.textContent = project.client;
 
-                    const summaryDiv = createElement(
-                        'div',
-                        projectDiv,
-                        'project-summary',
-                    );
+                    const summaryDiv = createElement('div', projectDiv, 'project-summary');
 
                     const summaryPara = createElement('p', summaryDiv);
                     summaryPara.textContent = project.summary;
@@ -69,11 +65,7 @@
                         project.technologystack !== undefined &&
                         project.technologystack.length > 0
                     ) {
-                        const technologyDiv = createElement(
-                            'div',
-                            projectDiv,
-                            'project-technology',
-                        );
+                        const technologyDiv = createElement('div', projectDiv, 'project-technology');
                         const technologyUL = createElement('ul', technologyDiv);
                         project.technologystack.forEach(item => {
                             const itemLI = createElement('li', technologyUL);
