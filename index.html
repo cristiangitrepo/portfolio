@@ -11,32 +11,45 @@
 
     <script>
 
-        addEventListener("load", (event) => {
+        document.addEventListener("DOMContentLoaded", () => {
+            // Opcional: puedes llamar a processData() aquí automáticamente al cargar la página
+            // processData();
+        });
 
-        })
         const requestURL = './assets/data/data.json';
-        const request = new XMLHttpRequest();
-        const data = request.response;
-        const projects = data.projects;
-
 
         function processData() {
+            const request = new XMLHttpRequest();
             request.open('GET', requestURL);
             request.responseType = 'json';
-            request.send();
-            request.onload = loadData;
-        }
 
-        function loadData() {
-            populateProjectsCardGrid(projects);
+            request.onload = function () {
+                if (request.status >= 200 && request.status < 300) {
+                    const data = request.response;
+                    const projects = data.projects;
+                    populateProjectsCardGrid(projects);
+                } else {
+                    console.error('Error al cargar el archivo JSON. Estado:', request.status);
+                }
+            };
+
+            request.onerror = function () {
+                console.error('Error de red al intentar conectar con el JSON.');
+            };
+
+            request.send();
         }
 
         function populateProjectsCardGrid(projects) {
             const projectCardGrid = document.querySelector('.project-cards-grid');
 
-            if (projects.length > 0) {
+            // Limpiamos el contenedor antes de añadir nuevos elementos para evitar duplicados si se pulsa varias veces
+            projectCardGrid.innerHTML = '';
+
+            if (projects && projects.length > 0) {
                 projects.forEach(project => {
                     const projectDiv = createElement('div', projectCardGrid);
+
                     const titleH1 = createElement('h1', projectDiv);
                     titleH1.textContent = project.name;
 
@@ -71,13 +84,15 @@
             }
         }
 
-        // createElement helper function
+        // createElement helper function corregida
         function createElement(type, parent, classList) {
             const element = document.createElement(type);
             if (classList !== undefined) {
-                typeof classList === 'Array' && classList.length > 0
-                    ? element.classList.add(...classList)
-                    : (element.className = classList);
+                if (Array.isArray(classList) && classList.length > 0) {
+                    element.classList.add(...classList);
+                } else if (typeof classList === 'string') {
+                    element.className = classList;
+                }
             }
             parent.append(element);
             return element;
