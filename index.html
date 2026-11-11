@@ -48,27 +48,25 @@
 
             if (projects && projects.length > 0) {
                 projects.forEach(project => {
-                    const projectDiv = createElement('div', projectCardGrid);
+                    const projectDiv = createElement('li', projectCardGrid, 'service-item');
 
                     const titleH1 = createElement('h2', projectDiv);
                     titleH1.textContent = project.name;
 
-                    const clientH2 = createElement('h3', projectDiv);
+                    const clientH2 = createElement('h4', projectDiv);
                     clientH2.textContent = project.client;
 
-                    const summaryDiv = createElement('div', projectDiv, 'project-summary');
 
-                    const summaryPara = createElement('p', summaryDiv);
+                    const summaryPara = createElement('p', projectDiv);
                     summaryPara.textContent = project.summary;
 
                     if (
                         project.technologystack !== undefined &&
                         project.technologystack.length > 0
                     ) {
-                        const technologyDiv = createElement('div', projectDiv, 'project-technology');
-                        const technologyUL = createElement('ul', technologyDiv);
+                        const technologyUL = createElement('ul', projectDiv, 'service-bottom');
                         project.technologystack.forEach(item => {
-                            const itemLI = createElement('li', technologyUL);
+                            const itemLI = createElement('li', technologyUL, 'cta');
                             itemLI.textContent = item;
                         });
                     }
@@ -138,7 +136,7 @@
 
             <!-- Service Section -->
             <article id="services">
-                <div class="project-cards-grid"></div>
+                <ul class="project-cards-grid service-bottom"></ul>
                 <button onclick="processData()">Load</button>
                 <div class="services container">
                     <div class="service-top">

@@ -3,19 +3,19 @@
         {
             "name": "Project 1",
             "client": "Client 1",
-            "summary": "Lorem ipsum",
+            "summary": "Lorem ipsum dolor set amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "technologystack": ["NodeJS", "AngularJS", "Bootstrap"]
         },
         {
             "name": "Project 2",
             "client": "Client 2",
-            "summary": "Lorem ipsum",
+            "summary": "Lorem ipsum dolor set amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "technologystack": ["NodeJS", "AngularJS", "Bootstrap"]
         },
         {
             "name": "Project 3",
             "client": "Client 4",
-            "summary": "Lorem ipsum",
+            "summary": "Lorem ipsum dolor set amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "technologystack": ["NodeJS", "AngularJS", "Bootstrap"]
         }
     ]
