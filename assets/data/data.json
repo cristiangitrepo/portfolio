@@ -1,22 +1,64 @@
 {
-    "projects": [
-        {
-            "name": "Project 1",
-            "client": "Client 1",
-            "summary": "Lorem ipsum dolor set amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "technologystack": ["NodeJS", "AngularJS", "Bootstrap"]
-        },
-        {
-            "name": "Project 2",
-            "client": "Client 2",
-            "summary": "Lorem ipsum dolor set amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "technologystack": ["NodeJS", "AngularJS", "Bootstrap"]
-        },
-        {
-            "name": "Project 3",
-            "client": "Client 4",
-            "summary": "Lorem ipsum dolor set amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "technologystack": ["NodeJS", "AngularJS", "Bootstrap"]
-        }
-    ]
+  "preguntas": [
+    {
+      "pregunta": "Pregunta del test 01",
+      "traduccion": "Pregunta do test 01",
+      "opciones": [
+        { "id": 1, "enunciado": "Opción 01", "traduccion": "Opción 01" },
+        { "id": 1, "enunciado": "Opción 02", "traduccion": "Opción 02" },
+        { "id": 1, "enunciado": "Opción 03", "traduccion": "Opción 03" },
+        { "id": 1, "enunciado": "Opción 04", "traduccion": "Opción 04" }
+      ]
+    },
+    {
+      "pregunta": "Pregunta del test 02",
+      "traduccion": "Pregunta do test 02",
+      "opciones": [
+        { "id": 1, "enunciado": "Opción 01", "traduccion": "Opción 01" },
+        { "id": 1, "enunciado": "Opción 02", "traduccion": "Opción 02" },
+        { "id": 1, "enunciado": "Opción 03", "traduccion": "Opción 03" },
+        { "id": 1, "enunciado": "Opción 04", "traduccion": "Opción 04" }
+      ]
+    },
+    {
+      "pregunta": "Pregunta del test 03",
+      "traduccion": "Pregunta do test 03",
+      "opciones": [
+        { "id": 1, "enunciado": "Opción 01", "traduccion": "Opción 01" },
+        { "id": 1, "enunciado": "Opción 02", "traduccion": "Opción 02" },
+        { "id": 1, "enunciado": "Opción 03", "traduccion": "Opción 03" },
+        { "id": 1, "enunciado": "Opción 04", "traduccion": "Opción 04" }
+      ]
+    },
+    {
+      "pregunta": "Pregunta del test 04",
+      "traduccion": "Pregunta do test 04",
+      "opciones": [
+        { "id": 1, "enunciado": "Opción 01", "traduccion": "Opción 01" },
+        { "id": 1, "enunciado": "Opción 02", "traduccion": "Opción 02" },
+        { "id": 1, "enunciado": "Opción 03", "traduccion": "Opción 03" },
+        { "id": 1, "enunciado": "Opción 04", "traduccion": "Opción 04" }
+      ]
+    },
+    {
+      "pregunta": "Pregunta del test 05",
+      "traduccion": "Pregunta do test 05",
+      "opciones": [
+        { "id": 1, "enunciado": "Opción 01", "traduccion": "Opción 01" },
+        { "id": 1, "enunciado": "Opción 02", "traduccion": "Opción 02" },
+        { "id": 1, "enunciado": "Opción 03", "traduccion": "Opción 03" },
+        { "id": 1, "enunciado": "Opción 04", "traduccion": "Opción 04" }
+      ]
+    },
+    {
+      "pregunta": "Pregunta del test 06",
+      "traduccion": "Pregunta do test 06",
+      "opciones": [
+        { "id": 1, "enunciado": "Opción 01", "traduccion": "Opción 01" },
+        { "id": 1, "enunciado": "Opción 02", "traduccion": "Opción 02" },
+        { "id": 1, "enunciado": "Opción 03", "traduccion": "Opción 03" },
+        { "id": 1, "enunciado": "Opción 04", "traduccion": "Opción 04" }
+      ]
+    }
+  ]
 }
